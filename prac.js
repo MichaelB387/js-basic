@@ -1,4 +1,7 @@
+// Variable
 var a = 4
+// Variable
 var b = 5
-sum = a + b
+// Variable
+var sum = a + b
 console.log(sum)
