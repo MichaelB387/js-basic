@@ -20,8 +20,23 @@ if (a > b) {
 } else {
   isItBigger = console.log("b is biger then a");
 }
-
 console.log(isItBigger);
+
+// Ternary operator
+a === b ? console.log("Match") : console.log("No Match")
+
+
+//Array
+    //index   0     1       2
+var pens = ["red","blue","green"]
+//will output blue
+console.log(pens[1])
+//will output array length, the length is a property of an array
+console.log("Array Length:", pens.length)
+//using a method on the array
+pens.reverse()
+//will output the array in reverse order
+console.log(pens)
 
 console.log(sum);
 console.log(result);
