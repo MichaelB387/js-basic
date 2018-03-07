@@ -60,15 +60,11 @@ console.log("Fraction " + fractionResult[0] + " with a value of " + fractionResu
 
 // Anonymous function example
 
-var d = 5/7
-
-var e = 18/25
-
-var theBiggest = function() {
+var theBiggest = function(d,e) {
     var result
     a>b ? result = ["d ", d] : result = ["e ", e]
-    console.log(result)
+    return resukt
 }
 
 //Means there is an anonymous function within the variable
-theBiggest()
+console.log(theBiggest(7/9, 13/25))
