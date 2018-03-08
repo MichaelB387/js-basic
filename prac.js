@@ -147,6 +147,6 @@ var courses = [
 ]
 // Will now display courses
 console.log(courses)
-// This will output th instructor from the second course
+// This will output the instructor from the second course
 console.log(courses[1].instructor)
 
