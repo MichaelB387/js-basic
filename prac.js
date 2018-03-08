@@ -80,3 +80,18 @@ console.log(theBiggest(7/9, 13/25))
 
 // //Means there is an anonymous function within the variable
 // console.log(theBiggest)
+
+const MYCONSTANT = 5 // is a constant cannot be changed once defined
+console.log(MYCONSTANT)
+
+function logScope() {
+// let // Block scope variable, Smaller scope then var
+  let localVar = 2; 
+  if (localVar) {
+    let localVar = "im different";
+    console.log("nested locallVar: ", localVar);
+  }
+  console.log("logScope localVar: ", localVar);
+}
+
+logScope();
