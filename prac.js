@@ -132,9 +132,21 @@ function Course(title,instructor,level,published,views) {
     this.instructor = instructor
     this.published = published
     this.views = views
-    this.updateViews = function (){
+    this.updateViews = function () {
         return ++this.views
     }
 }
-
 // Now can create new instances of the Course Object
+// var course01 = new Course("JavaScript Essential Training","Morten Rand-Hendriksen",1,true,0)
+// var course02 = new Course("Up and Running with EcmaScript6","Eve Porcello",1,true,123456)
+
+// Putting courses into an array
+var courses = [
+   new Course("JavaScript Essential Training","Morten Rand-Hendriksen",1,true,0),
+   new Course("Up and Running with EcmaScript6","Eve Porcello",1,true,123456)
+]
+// Will now display courses
+console.log(courses)
+// This will output th instructor from the second course
+console.log(courses[1].instructor)
+
