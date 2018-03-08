@@ -157,3 +157,22 @@ console.log(courses[1].instructor)
 // WP:image, to get to this property use course["WP;image"] you cannot do this with dot notation
 // course["title"]
 
+
+//Closures
+//Closure is a function inside a function that allows variables outside the function to work
+// Example
+
+function doSomeMath() {
+    var a = 5
+    var b = 4
+
+    function multiply() {
+        var result = a*b
+        return result
+    }
+    return multiply
+}
+
+var theResult = doSomeMath()
+
+console.log("The result: ", theResult())
