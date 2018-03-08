@@ -106,19 +106,35 @@ var course = new Object()
 
 // Shorthand
 
-var course = {
-    title : "JavaScript Essential Training",
-    instructor : "Morten Rand-Hendriksen",
-    level : 1,
-    published : true,
-    views : 0,
-    //method within Object
-    // will update course views each time it has been viewed
-    updateViews : function() {
-        return ++course.views
+// var course = {
+//     title : "JavaScript Essential Training",
+//     instructor : "Morten Rand-Hendriksen",
+//     level : 1,
+//     published : true,
+//     views : 0,
+//     //method within Object
+//     // will update course views each time it has been viewed
+//     updateViews : function() {
+//         return ++course.views
+//     }
+// }
+
+// console.log(course.views)
+// course.updateViews()
+// console.log(course.views)
+
+// new instance of a date object
+var currentDate = new Date()
+
+// Constructor for Object
+function Course(title,instructor,level,published,views) {
+    this.title = title
+    this.instructor = instructor
+    this.published = published
+    this.views = views
+    this.updateViews = function (){
+        return ++this.views
     }
 }
 
-console.log(course.views)
-course.updateViews()
-console.log(course.views)
+// Now can create new instances of the Course Object
