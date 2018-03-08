@@ -59,12 +59,24 @@ console.log("Fraction " + fractionResult[0] + " with a value of " + fractionResu
 
 
 // Anonymous function example
-
+// immediately invoked function expression
+//https://www.linkedin.com/learning/javascript-essential-training-3/immediately-invoked-functional-expressions
 var theBiggest = function(d,e) {
-    var result
+    var result  //Local scoped variable
     a>b ? result = ["d ", d] : result = ["e ", e]
-    return resukt
+    return result //Local scoped variable
 }
 
 //Means there is an anonymous function within the variable
 console.log(theBiggest(7/9, 13/25))
+
+// immediately invoked function expression
+//https://www.linkedin.com/learning/javascript-essential-training-3/immediately-invoked-functional-expressions
+// var theBiggest = (function(d,e) {
+//     var result
+//     a>b ? result = ["d ", d] : result = ["e ", e]
+//     return result
+// })(7/9, 13/25)
+
+// //Means there is an anonymous function within the variable
+// console.log(theBiggest)
