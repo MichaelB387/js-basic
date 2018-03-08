@@ -150,3 +150,10 @@ console.log(courses)
 // This will output the instructor from the second course
 console.log(courses[1].instructor)
 
+//Dot Notation
+// course.title
+
+//Bracket Notation works well when you need to convert property into a string e.g
+// WP:image, to get to this property use course["WP;image"] you cannot do this with dot notation
+// course["title"]
+
