@@ -111,7 +111,14 @@ var course = {
     instructor : "Morten Rand-Hendriksen",
     level : 1,
     published : true,
-    views : 0
+    views : 0,
+    //method within Object
+    // will update course views each time it has been viewed
+    updateViews : function() {
+        return ++course.views
+    }
 }
 
-console.log(course)
+console.log(course.views)
+course.updateViews()
+console.log(course.views)
